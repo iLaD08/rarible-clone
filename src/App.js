@@ -68,8 +68,8 @@ const App = () => {
             <a href={nft.link} target="_blank" rel="noreferrer">
               <img
                 src={`https://ipfs.io/${nft.pic.replace("ipfs://", "")}`}
-                alt={nft.symbol}
-                title={nft.symbol}
+                alt={nft.name}
+                title={nft.name}
               />
             </a>
             <h2>{nft.name}</h2>
