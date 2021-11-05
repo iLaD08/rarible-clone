@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { HomeContainer } from "./style";
 
 const Home = () => (
@@ -25,6 +26,17 @@ const Home = () => (
         marketplace to create and sell digital collectibles secured with
         blockchain.
       </h3>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/top-collections">Top Collections</Link>
+        </li>
+        <li>
+          <Link to="/hot-collections">Hot Collections</Link>
+        </li>
+      </ul>
     </div>
   </HomeContainer>
 );
