@@ -1,12 +1,13 @@
 import React from "react";
+import { CollectionContainer } from "./style.js";
 
 const Collection = ({ collection }) => (
-  <div className="collection">
+  <CollectionContainer>
     <a href={collection.shortURL} target="_blank" rel="noreferrer">
       <img src={collection.pic} alt={collection.name} title={collection.name} />
     </a>
     <h2>{collection.name}</h2>
-  </div>
+  </CollectionContainer>
 );
 
 export default Collection;

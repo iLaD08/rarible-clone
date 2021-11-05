@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import getTopCollection from "../actions/getTopCollection";
-import Collection from "../components/collection";
+import getTopCollection from "../../actions/getTopCollection";
+import Collection from "../../components/collection/index.js";
+import { TocollectionsContainer } from "./style";
 
 const TopCollections = () => {
   const [data, setData] = useState([]);
@@ -12,7 +13,7 @@ const TopCollections = () => {
   }, []);
 
   return (
-    <div>
+    <TocollectionsContainer>
       <h1 className="title">Top collections</h1>
       <div className="filter">
         <span>
@@ -44,7 +45,7 @@ const TopCollections = () => {
           <span>loading....</span>
         </div>
       )}
-    </div>
+    </TocollectionsContainer>
   );
 };
 
