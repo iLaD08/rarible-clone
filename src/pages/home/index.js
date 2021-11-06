@@ -10,7 +10,11 @@ const Home = () => (
       title="API"
     />
     <div>
-      <h1>We offer many endpoints to use as restful API:</h1>
+      <h1>
+        NAG its first API to fetch all data displayed of rarible NFTs
+        marketplace.
+      </h1>
+      <h2>We offer many endpoints to use as restful API:</h2>
       <ul>
         <li>
           <Link to="/top-collections">Top Collections</Link>
