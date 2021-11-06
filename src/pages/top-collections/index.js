@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import getTopCollection from "../../actions/getTopCollection";
 import Collection from "../../components/collection/index.js";
 import { TocollectionsContainer } from "./style";
 
 const TopCollections = () => {
+  let navigate = useNavigate();
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -14,6 +16,12 @@ const TopCollections = () => {
 
   return (
     <TocollectionsContainer>
+      <img
+        className="back-arrow"
+        onClick={() => navigate("/")}
+        src="https://raw.githubusercontent.com/iLaD08/react-weather-app/3b701388e5f3932506f652780eee0378d38a512e/src/assets/arrow.svg"
+        alt=""
+      />
       <h1 className="title">Top collections</h1>
       <div className="filter">
         <span>

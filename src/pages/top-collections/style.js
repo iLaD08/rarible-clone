@@ -1,6 +1,16 @@
 import styled from "styled-components";
 
 export const TocollectionsContainer = styled.div`
+  .back-arrow {
+    cursor: pointer;
+    position: fixed;
+    top: 6vh;
+    left: 15px;
+    width: 25px;
+    height: auto;
+    border: none;
+  }
+
   .title {
     margin-top: 6vh;
     text-align: center;

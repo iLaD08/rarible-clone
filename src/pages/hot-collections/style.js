@@ -1,6 +1,16 @@
 import styled from "styled-components";
 
 export const HotCollectionsContainer = styled.div`
+  .back-arrow {
+    cursor: pointer;
+    position: fixed;
+    top: 6vh;
+    left: 15px;
+    width: 25px;
+    height: auto;
+    border: none;
+  }
+
   .title {
     margin-top: 6vh;
     text-align: center;
@@ -29,5 +39,11 @@ export const HotCollectionsContainer = styled.div`
     height: 10vw;
     background-color: #f5f5f550;
     border: 2px solid #f5f5f5;
+  }
+
+  .loading {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 25vh;
   }
 `;

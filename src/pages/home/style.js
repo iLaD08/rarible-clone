@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HomeContainer = styled.div`
   div {
-    margin: 20px;
+    margin: 12vh 20px 20px 20px;
   }
 
   div ul {
@@ -12,5 +12,9 @@ export const HomeContainer = styled.div`
   img {
     display: block;
     margin: 0px auto;
+  }
+
+  a {
+    color: #000;
   }
 `;
