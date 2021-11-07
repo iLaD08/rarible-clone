@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
-import CurrencyFormat from "react-currency-format";
 import { useNavigate } from "react-router-dom";
+import { BeatLoader } from "react-spinners";
+import CurrencyFormat from "react-currency-format";
 import API from "../../api/api";
+import ArrowSvg from "../../assests/arrow.svg";
 import { HotCollectionsContainer } from "./style";
 
 const HotCollections = () => {
@@ -21,7 +23,7 @@ const HotCollections = () => {
       <img
         className="back-arrow"
         onClick={() => navigate("/")}
-        src="https://raw.githubusercontent.com/iLaD08/react-weather-app/3b701388e5f3932506f652780eee0378d38a512e/src/assets/arrow.svg"
+        src={ArrowSvg}
         alt=""
       />
       <h1 className="title">Hot Collections</h1>
@@ -49,7 +51,7 @@ const HotCollections = () => {
         </div>
       ) : (
         <div className="loading">
-          <span>loading....</span>
+          <BeatLoader color="grey" size={20} />
         </div>
       )}
     </HotCollectionsContainer>

@@ -9,6 +9,8 @@ export const TocollectionsContainer = styled.div`
     width: 25px;
     height: auto;
     border: none;
+    filter: invert(99%) sepia(5%) saturate(2%) hue-rotate(13deg)
+      brightness(106%) contrast(100%);
   }
 
   .title {
@@ -43,8 +45,7 @@ export const TocollectionsContainer = styled.div`
   }
 
   .loading {
-    font-size: 20px;
     text-align: center;
-    margin-top: 25vh;
+    margin-top: 40vh;
   }
 `;

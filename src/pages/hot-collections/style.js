@@ -9,6 +9,8 @@ export const HotCollectionsContainer = styled.div`
     width: 25px;
     height: auto;
     border: none;
+    filter: invert(99%) sepia(5%) saturate(2%) hue-rotate(13deg)
+      brightness(106%) contrast(100%);
   }
 
   .title {
@@ -38,12 +40,11 @@ export const HotCollectionsContainer = styled.div`
     width: 10vw;
     height: 10vw;
     background-color: #f5f5f550;
-    border: 2px solid #f5f5f5;
+    border: 5px solid gold;
   }
 
   .loading {
-    font-size: 20px;
     text-align: center;
-    margin-top: 25vh;
+    margin-top: 40vh;
   }
 `;

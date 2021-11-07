@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export const HomeContainer = styled.div`
+  h1 {
+    color: gold;
+  }
+
   div {
     margin: 12vh 20px 20px 20px;
   }
@@ -10,11 +14,13 @@ export const HomeContainer = styled.div`
   }
 
   img {
+    width: 20%;
     display: block;
-    margin: 0px auto;
+    margin: 10vh auto;
   }
 
+  li,
   a {
-    color: #000;
+    color: lightgrey;
   }
 `;

@@ -5,7 +5,7 @@ import { HomeContainer } from "./style";
 const Home = () => (
   <HomeContainer>
     <img
-      src="https://nftscryptoguide.com/wp-content/uploads/2021/08/rarible-nft-marketplace.png"
+      src="https://img.rarible.com/prod/image/upload/t_big/prod-itemImages/0x60f80121c31a0d46b5279700f9df786054aa5ee5:58567/3c0b56bc"
       alt="API"
       title="API"
     />
@@ -14,7 +14,7 @@ const Home = () => (
         NAG its first API to fetch all data displayed of rarible NFTs
         marketplace.
       </h1>
-      <h2>We offer many endpoints to use as restful API:</h2>
+      <span>We offer many endpoints to use as restful API:</span>
       <ul>
         <li>
           <Link to="/top-collections">Top Collections</Link>

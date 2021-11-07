@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { BeatLoader } from "react-spinners";
 import getTopCollection from "../../actions/getTopCollection";
 import Collection from "../../components/collection/index.js";
+import ArrowSvg from "../../assests/arrow.svg";
 import { TocollectionsContainer } from "./style";
 
 const TopCollections = () => {
@@ -19,7 +21,7 @@ const TopCollections = () => {
       <img
         className="back-arrow"
         onClick={() => navigate("/")}
-        src="https://raw.githubusercontent.com/iLaD08/react-weather-app/3b701388e5f3932506f652780eee0378d38a512e/src/assets/arrow.svg"
+        src={ArrowSvg}
         alt=""
       />
       <h1 className="title">Top collections</h1>
@@ -50,7 +52,7 @@ const TopCollections = () => {
         </div>
       ) : (
         <div className="loading">
-          <span>loading....</span>
+          <BeatLoader color="grey" size={20} />
         </div>
       )}
     </TocollectionsContainer>
